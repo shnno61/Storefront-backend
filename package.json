@@ -15,7 +15,7 @@
     "db-up": "db-migrate up shema-dev  "
 
   },
-  "author": "Udacity",
+  "author": "Shin",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
