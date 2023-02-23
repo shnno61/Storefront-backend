@@ -8,11 +8,10 @@
     "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\"",
     "tsc": "tsc",
     "dev": " nodemon src/server.ts",
-    "tests":"db-migrate db:create shema-test && db-migrate --env test up && set ENV=test jasmine  && db-migrate --env test down && db-migrate db:drop storefront_test",
-    "test": "set NODE_ENV=test && tsc && db-migrate up schema-dev --env test && tsc&& jasmine && db-migrate reset --env test ",
+    "test": "set NODE_ENV=test && tsc && db-migrate up --env test && tsc&& jasmine && db-migrate reset --env reset ",
     "format": "prettier --write src/**/**/*.ts",
     "lint": "eslint src/**/**/*.ts --fix",
-    "db-up": "db-migrate up shema-dev  "
+    "db-up": "db-migrate up   "
 
   },
   "author": "Shin",

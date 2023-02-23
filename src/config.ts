@@ -27,4 +27,4 @@ export default {
   saltRounds: SALT_ROUNDS,
   jwtSecret: JWT_SECRET,
   env: NODE_ENV,
-}; 
+};

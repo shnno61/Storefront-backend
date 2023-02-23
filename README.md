@@ -3,12 +3,13 @@ This is a storefront backend app for online store .It has many apis to add funct
 
 ## First
 - cloning this repo
-- run < yarn install>
+- run < yarn install> or < npm install> to install all dependencies
 
 #### Requirements
 ##### PreStart 
-- you should have a postgres to databases and remember configurations to its 
-- create two databases one for development and the other for testing
+###### SET UP DATABASE 
+
+-    ----------------------------------
 - add file called <.env> and assign your attributes to it  like this
   - NODE_ENV=dev      < node env>
   - SERVER_PORT=4003    < server port >
@@ -24,13 +25,17 @@ This is a storefront backend app for online store .It has many apis to add funct
   -  SALT_ROUNDS=5    < used in password encryption>
   -  
   -  JWT_SECRET=shn-is-here    < used for token>
+  -   --------------------------- 
+- You should install postgress system for database or use docker image ..what ever you want .And set up the database to access it via < localhost:3333>
+- you should conncet to it in terminal using commant < psql -U postgres< username > -p 3333 < port for database to access >>  then, create two databases using < CREATE DATABSE store;> and < CREATE DATABASE store_test>
+- To set up migrations use command < yarn run db-up > 
 ##### Then
-- for database < yarn run db-up  > and this is very important
+ 
 - for formating < yarn run format >
 - for linting < yarn run lint >
 - for testing < yarn run test >
-### And finally to run the app
-- yarn run start
+### And finally to build and run the app < on port 4003 >
+- < yarn run start>
 
 
 ## API Endpoints
