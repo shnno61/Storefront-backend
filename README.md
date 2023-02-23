@@ -79,7 +79,7 @@ This is a storefront backend app for online store .It has many apis to add funct
 - firstName
 - lastName
 - password
--  =>CREATE TABLE users (id SERIAL PRIMARY KEY ,first_name VARCHAR(100) UNIQUE NOT NULL, last_name VARCHAR(100) NOT NULL, password VARCHAR(255) UNIQUE NOT NULL);
+-  =>CREATE TABLE users (id SERIAL PRIMARY KEY ,first_name VARCHAR(100) UNIQUE NOT NULL, last_name VARCHAR(100) NOT NULL, passs VARCHAR(255) UNIQUE NOT NULL);
 
 
 #### orders
