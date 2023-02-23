@@ -8,29 +8,27 @@ This is a storefront backend app for online store .It has many apis to add funct
 #### Requirements
 ##### PreStart 
 ###### SET UP DATABASE 
-
+- You should install postgress system for database or use docker image ..what ever you want .And set up the database to access it via < localhost:3333>
+- you should conncet to it in terminal using commant < psql -U postgres< username > -p 3333 < port for database to access >>  then, create two databases using < CREATE DATABSE store;> and < CREATE DATABASE store_test>
+- To set up migrations use command < yarn run db-up > 
+##### Then
 -    ----------------------------------
 - add file called <.env> and assign your attributes to it  like this
   - NODE_ENV=dev      < node env>
   - SERVER_PORT=4003    < server port >
   -  PG_HOST=localhost   < host ip for postgres database>
   -  PG_PORT=3333    < database port>
-  -  DATABASE_NAME=store    < first database name for development you remember??>
-  -  DATABASE_NAME_TEST=store_test  < second database name for testing you remember??>
+  -  DATABASE_NAME=store    < first database name for development  >
+  -  DATABASE_NAME_TEST=store_test  < second database name for testing  >
   -  DATABASE_USER=postgres   < database user>
-  -  DATABASE_PASSWORD=shn   < password for database>
+  -  DATABASE_PASSWORD=###   < password for database>
   -  
   -  
-  -  BCRYPT_SALT=shno   < used in password encryption>
+  -  BCRYPT_SALT=###   < used in password encryption>
   -  SALT_ROUNDS=5    < used in password encryption>
   -  
-  -  JWT_SECRET=shn-is-here    < used for token>
+  -  JWT_SECRET=###    < used for token>
   -   --------------------------- 
-- You should install postgress system for database or use docker image ..what ever you want .And set up the database to access it via < localhost:3333>
-- you should conncet to it in terminal using commant < psql -U postgres< username > -p 3333 < port for database to access >>  then, create two databases using < CREATE DATABSE store;> and < CREATE DATABASE store_test>
-- To set up migrations use command < yarn run db-up > 
-##### Then
- 
 - for formating < yarn run format >
 - for linting < yarn run lint >
 - for testing < yarn run test >
