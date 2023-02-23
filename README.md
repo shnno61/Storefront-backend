@@ -1,10 +1,10 @@
 # Storefront Backend Project
 This is a storefront backend app for online store .It has many apis to add functionality to the store 
-
+-    ----------------------------------
 ## First
 - cloning this repo
 - run < yarn install> or < npm install> to install all dependencies
-
+-    ----------------------------------
 #### Requirements
 ##### PreStart 
 ###### SET UP DATABASE 
@@ -34,7 +34,7 @@ This is a storefront backend app for online store .It has many apis to add funct
 - for testing < yarn run test >
 ### And finally to build and run the app < on port 4003 >
 - < yarn run start>
-
+-    ----------------------------------
 
 ## API Endpoints
 #### Products
@@ -63,7 +63,7 @@ This is a storefront backend app for online store .It has many apis to add funct
 -  done                      [token required] 'store/orders/:id<order_id>' [PUT]
 -  add_product_to_order      [token required] 'store/orders ' [post]  => body{"order_id":"<order_id >""product_id":"<product_id>""quantity":"<quantity>"}
 -  romove_product_from_order [token required] 'store/orders/:id<order_id> ' [delete]  => body{"product_id":"<product_id>"}
-
+-    ----------------------------------
 ## DataBase Shapes
 #### product
 -  id =>(Primary Key)
