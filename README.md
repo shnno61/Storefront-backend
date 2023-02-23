@@ -8,6 +8,7 @@ This is a storefront backend app for online store .It has many apis to add funct
 #### Requirements
 ##### PreStart 
 - you should have a postgres to databases and remember configurations to its 
+- create two databases one for development and the other for testing
 - add file called <.env> and assign your attributes to it  like this
   - NODE_ENV=dev      < node env>
   - SERVER_PORT=4003    < server port >
